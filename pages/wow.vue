@@ -28,7 +28,7 @@
                 meta: [
                     { hid: 'og:title', property: 'og:title', content: this.title },
                     { hid: 'og:type', property: 'og:type', content: 'website' },
-                    { hid: 'og:url', property: 'og:url', content: 'http://172.104.208.23/' },
+                    { hid: 'og:url', property: 'og:url', content: 'http://172.104.208.23/wow' },
                     { hid: 'og:image', property: 'og:image', content: 'https://i.kym-cdn.com/photos/images/original/001/255/097/022.jpg' },
                     { hid: 'description', name: 'description', content: 'Hello World WOW Page!!!' }
                 ]
