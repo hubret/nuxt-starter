@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{title}}</h1>
+        <h1>INDEX</h1>
         <p>{{email}}</p>
         <p>{{clients}}</p>
     </div>
