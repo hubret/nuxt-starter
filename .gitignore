@@ -1,0 +1,7 @@
+# Common
+
+.htaccess
+.DS_Store
+.sass-cache/
+robots.txt
+node_modules/

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    
+
     export default {
         data () {
             return {
@@ -27,13 +27,13 @@
                 title: this.$nuxt.$store.state.moduleUser.name,
                 meta: [
                     { hid: 'og:title', name: 'og:title', content: this.title },
-                    { hid: 'og:image', name: 'og:image', content: 'http://i2.kym-cdn.com/photos/images/newsfeed/001/135/941/b95.jpg' },
-                    { hid: 'description', name: 'description', content: 'Hello World Index Page!!!' }
+                    { hid: 'og:image', name: 'og:image', content: 'https://i.kym-cdn.com/photos/images/original/001/255/097/022.jpg' },
+                    { hid: 'description', name: 'description', content: 'Hello World WOW Page!!!' }
                 ]
             }
         },
         created() {
-            
+
         }
     }
 </script>
