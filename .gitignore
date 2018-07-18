@@ -5,3 +5,4 @@
 .sass-cache/
 robots.txt
 node_modules/
+.nuxt
