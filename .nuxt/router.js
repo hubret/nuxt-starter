@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _546e33d7 = () => import('..\\pages\\wow.vue' /* webpackChunkName: "pages_wow" */).then(m => m.default || m)
 const _425c92ec = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
@@ -63,6 +64,11 @@ export function createRouter () {
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
+		{
+			path: "/wow",
+			component: _546e33d7,
+			name: "wow"
+		},
 		{
 			path: "/",
 			component: _425c92ec,

@@ -1,46 +1,25 @@
 <template>
     <div>
-        <h1>WOW</h1>
-        <p>{{email}}</p>
-        <p>{{clients}}</p>
+        <h1>{{myVar}}</h1>
+        <p v-html="myVar"></p>
     </div>
 </template>
 
 <script>
 
-    export default {
-        data () {
-            return {
-                title: this.$store.state.moduleUser.name,
-                email: this.$store.state.moduleUser.email,
-                clients: this.$store.state.moduleUser.clients
-            }
-        },
-        methods: {
-            addUser () {
-                // Send an event upwards to be picked up by App
-                this.$dispatch('button-pressed')
-            }
-        },
-        head () {
-            return {
-                title: this.$nuxt.$store.state.moduleUser.name,
-                meta: [
-                    { hid: 'og:title', property: 'og:title', content: this.title },
-                    { hid: 'og:type', property: 'og:type', content: 'website' },
-                    { hid: 'og:url', property: 'og:url', content: 'http://172.104.208.23/wow' },
-                    { hid: 'og:image', property: 'og:image', content: 'https://i.kym-cdn.com/photos/images/original/001/255/097/022.jpg' },
-                    { hid: 'description', name: 'description', content: 'Hello World WOW Page!!!' }
-                ]
-            }
-        },
-        created() {
+    //    import header from '~/components/header.vue'
+    //    import footer from '~/components/footer.vue'
 
+    export default {
+        computed: {
+            myVar(){
+                return this.$store.getters.getMyVariable;
+            },
         }
     }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 
 </style>
